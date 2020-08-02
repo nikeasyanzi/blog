@@ -1,0 +1,94 @@
+## Basic Configuration
+baseURL = "https://nikeasyanzi.github.io/"
+languageCode = "en-us"
+
+title = "My New Hugo Site"
+theme = "hyde-hyde"
+
+## Hugo Built-in Features
+# disqusShortname = "your-disqus-shortname"
+# googleAnalytics = "your-google-analytics-id"
+# enableRobotsTXT = true
+
+# summarylength = 30
+
+#paginate = 5
+
+## Site Settings
+[params]
+
+    author = "Author"
+    title = "Title"
+    theme = "hyde-hyde"
+    # description = "..."
+    authorimage = "/img/hugo.png"
+    dateformat = "Jan 2, 2006"
+
+    # sidebar, copyright & license
+    copyright = "htr3n"
+    since = 2019
+    license = "CC BY-SA 4.0"
+    licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
+    showBuiltWith = true
+
+    # syntax highlight style, only when highlightjs = true,please choose one of many highlight.js's styles.
+    # for more styles, please check https://highlightjs.org 
+    highlightjs = true
+    highlightjsstyle = "github"
+	   
+    #highlightjslanguages = ["swift", "objectivec"]
+ 
+    #Setting to false will disable the navigation Previous Post/ Next Post
+    postNavigation = true
+
+    #Setting to true allows related posts. Please refer here for more details on related contents with Hugo.
+    relatedPosts = false
+
+    # please choose either GraphComment or Disqus or Utterances
+    #GraphCommentId = "..."
+    #UtterancesRepo = "..." # https://utteranc.es/
+    #UtterancesIssueTerm = "..." # pathname, url, title, og:title
+    #UtterancesTheme = "..." # github-light or github-dark
+
+    #To reverse page orientation, add the layoutReverse variable under params, like so:
+    #layoutReverse = true
+
+
+    # Table of contents
+    #toc = none, "hugo", or "tocbot"
+	
+    #disqusShortname = "spf13"
+
+    #googleAnalytics = "Your tracking code"
+
+
+## Social Accounts
+[params.social]
+    github = "<username>"
+    instagram = "<username>"
+    xing = "<username>"
+    linkedin = "<username>"
+    twitter = "<username>"
+    facebook = "<username>"
+    stackoverflow = "<username>"
+    telegram = "<username>"
+    # orcid = "<xxxx-xxxx-xxxx-xxxx>"
+    email = "your-email@example.com"
+    # gravatar = "your-email@example.com"
+
+## Main Menu
+[[menu.main]]
+    name = "Posts"
+    weight = 100
+    identifier = "posts"
+    url = "/posts/"
+[[menu.main]]
+    name = "Portfolio"
+    identifier = "portfolio"
+    weight = 200
+    url = "/portfolio/"
+[[menu.main]]
+    name = "About"
+    identifier = "about"
+    weight = 300
+    url = "/about/"
